@@ -11,11 +11,11 @@ How to use
 ### Android
 - Drop the "vibration" directory inside the "modules" directory on the Godot source.
 - Recompile android export template following the [official instructions](http://docs.godotengine.org/en/latest/reference/compiling_for_android.html#compiling-export-templates).
-In your project goto Export > Target > Android:
+- In your project go to Export > Target > Android:
 	- Options:
 		- Custom Package:
 			- place your apk from build
-			
+- On the Android export options, check the _Vibrate_ permission			
 - Add the following lines to ```project.godot```:
 
 ```
@@ -36,8 +36,8 @@ API Reference (Android & iOS)
 
 The following methods are available:
 ```python
-# Vibrate
-# @param int duration the vibration duration in milliseconds (this parameter is igored on iOS)
+# Make the device vibrates
+# @param int duration the vibration duration in milliseconds (this parameter is ignored on iOS)
 vibrate(duration)
 
 ```
