@@ -10,7 +10,7 @@ How to use
 
 ### Android
 - Drop the "vibration" directory inside the "modules" directory on the Godot source.
-- Recompile android export template following the [official instructions](http://docs.godotengine.org/en/latest/reference/compiling_for_android.html#compiling-export-templates).
+- Recompile android export template following the [official instructions](http://docs.godotengine.org/en/latest/reference/compiling_for_android.html#compiling-export-templates). _* If you don't want or can't build the template by yourself, you can find a precompiled template with this module [here](https://github.com/Shin-NiL/godot-custom-mobile-template)_.
 - In your project go to Export > Target > Android:
 	- Options:
 		- Custom Package:
