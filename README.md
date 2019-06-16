@@ -16,9 +16,9 @@ How to use
 ```
 org/godotengine/godot/Vibration
 ```
-\* If you're using than one module separate them by comma.
+\* If you're using more than one module separate them by comma.
 
-\* This plugin needs the ```Vibrate```, which is automatically inserted.
+\* This plugin needs the ```Vibrate``` permission, which is automatically inserted.
 
 API Reference
 -------------
