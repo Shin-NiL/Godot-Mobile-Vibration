@@ -2,48 +2,37 @@
 
 Godot Mobile Vibration 
 ==========
-This is a vibration module for [Godot Game Engine](https://godotengine.org/) 3 for Android & iOS (need testing).
+This is an Android vibration plugin for [Godot Game Engine](https://godotengine.org/) 3.2 or greater. For Godot < 3.2 you can use the old module.
 
 
 How to use
 ----------
 
-### Android
-- Drop the "vibration" directory inside the "modules" directory on the Godot source.
-- Recompile the android export template following the [official instructions](http://docs.godotengine.org/en/latest/reference/compiling_for_android.html#compiling-export-templates). _* If you don't want or can't build the template by yourself, you can find a precompiled template with this module [here](https://github.com/Shin-NiL/godot-custom-mobile-template)_.
-- In your project go to Export > Target > Android:
-	- Options:
-		- Custom Package:
-			- place your apk from build
-- On the Android export options, check the _Vibrate_ permission			
-- Add the following lines to ```project.godot```:
+- Configure, install  and enable the "Android Custom Template" for your project, just follow the [official documentation](https://docs.godotengine.org/en/latest/getting_started/workflow/export/android_custom_build.html);
+- download or clone this repository;
+- drop the ```vibration-plugin``` directory (from this repository) inside the ```res://android/``` directory on your Godot project.		
+- on the Project Settings -> Android -> Modules, add the string:
 
 ```
-[android]
-modules="org/godotengine/godot/Vibration"
+org/godotengine/godot/Vibration
 ```
-If you have more than one module separate them by comma.
+\* If you're using than one module separate them by comma.
 
-### iOS
-- Drop the "vibration" directory inside the "modules" directory on the Godot source;
-- Recompile the iOS export template following the [official instructions](http://docs.godotengine.org/en/stable/development/compiling/compiling_for_ios.html).
-- For exporting, follow the [exporting to iOS official documentation](http://docs.godotengine.org/en/stable/learning/workflow/export/exporting_for_ios.html). 
-- Export your project from Godot, it'll create an Xcode project;
-- Copy the library (.a) you have compiled following the official documentation inside the exported Xcode project. You must override the 'your_project_name.a' file with this file.
+\* This plugin needs the ```Vibrate```, which is automatically inserted.
 
-API Reference (Android & iOS)
+API Reference
 -------------
 
 The following methods are available:
 ```python
 # Make the device vibrates
-# @param int duration the vibration duration in milliseconds (this parameter is ignored on iOS)
+# @param int duration the vibration duration in milliseconds
 vibrate(duration)
 
 ```
 
 Demo
 -------------
-In the demo directory you'll find a working sample project for Godot 3.
+In the demo directory you'll find a working sample project where you can see the plugin in action.
 
 
