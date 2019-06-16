@@ -1,6 +1,6 @@
 [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=3MJE3M4FMJYGN&lc=BR&item_name=Shin%2dNiL%27s%20Github&item_number=Github&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donate_SM%2egif%3aNonHosted)
 
-Godot Mobile Vibration 
+Godot Android Vibration Plugin 
 ==========
 This is an Android vibration plugin for [Godot Game Engine](https://godotengine.org/) 3.2 or greater. For Godot < 3.2 you can use the old module.
 
